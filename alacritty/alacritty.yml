@@ -1,0 +1,24 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  # ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  # ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+  # ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+window:
+  opacity: 0.80
+
+font:
+  normal:
+    family: "Hack"
+    style: Regular
+  bold:
+    family: "Hack"
+    style: Bold 
+  italic:
+    family: "Hack"
+    style: Italic
+  bold_italic:
+    family: "Hack"
+    style: Bold Italic
+
+  size: 11
