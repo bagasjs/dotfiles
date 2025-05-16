@@ -2,6 +2,10 @@ set nocompatible
 filetype off
 syntax on
 
+set noerrorbells
+set visualbell
+set t_vb=
+
 set number
 set relativenumber
 set numberwidth=6
@@ -16,9 +20,9 @@ set updatetime=50
 
 set nowrap
 set noswapfile 
-set clipboard=unnamedplus
 set nohlsearch 
 set incsearch
+set clipboard=unnamed,unnamedplus
 set nobackup
 set notermguicolors
 set undofile
@@ -36,6 +40,7 @@ inoremap <M-j> <esc><cmd>m .+1<cr>==gi
 inoremap <M-k> <esc><cmd>m .-2<cr>==gi 
 vnoremap <M-j> :m '>+1<cr>gv=gv
 vnoremap <M-k> :m '<-2<cr>gv=gv
+nnoremap - $
 
 vnoremap < <gv
 vnoremap > >gv
@@ -48,3 +53,6 @@ nnoremap <leader><tab>] <cmd>tabnext<cr>
 nnoremap <leader><tab>[ <cmd>tabprevious<cr>
 nnoremap <leader><tab>t <CMD>tabnew<CR><CMD>terminal<CR>
 tnoremap <ESC>", <C-\\><C-n>
+
+
+colorscheme habamax
