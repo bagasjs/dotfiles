@@ -10,6 +10,7 @@ set t_vb=
 set number
 set relativenumber
 set numberwidth=6
+autocmd BufEnter term://* setlocal nonumber norelativenumber
 
 set tabstop=4
 set softtabstop=4
