@@ -2,6 +2,7 @@ set nocompatible
 filetype off
 syntax on
 
+"For windows only
 set noerrorbells
 set visualbell
 set t_vb=
@@ -51,8 +52,7 @@ nnoremap <leader><tab><tab> <cmd>tabnew<cr>
 nnoremap <leader><tab>d <cmd>tabclose<cr>
 nnoremap <leader><tab>] <cmd>tabnext<cr>
 nnoremap <leader><tab>[ <cmd>tabprevious<cr>
-nnoremap <leader><tab>t <CMD>tabnew<CR><CMD>terminal<CR>
-tnoremap <ESC>", <C-\\><C-n>
-
+nnoremap <leader><tab>t <CMD>tab term<CR>
+tnoremap <ESC> <C-\><C-n>
 
 colorscheme habamax
